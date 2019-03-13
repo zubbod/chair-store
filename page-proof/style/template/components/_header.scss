@@ -1,0 +1,147 @@
+.header {
+    background-color: $bgc;
+    padding: 15px 0;
+    width: 100%;
+    & svg {
+        margin-right: 10px;
+        fill: $icon;
+    }
+    &__modified .header__logo{
+      flex-basis: 1170px;
+      justify-content: space-between;
+    }
+    &__logo {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 370px;
+        flex: 0 1 370px;
+        align-items: center;
+    }
+    &__wrapper {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    &-info {
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 530px;
+        flex: 0 0 530px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.2;
+        &__check-status {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                margin-left: 10px;
+                width: 19px;
+                height: 19px;
+                border-radius: 50%;
+                border: 2px solid $border;
+                background-color: $bgc;
+                display: inline-block;
+                svg {
+                    margin-left: 7px;
+                    fill: $primary;
+                }
+            }
+            &:hover {
+                color: $a-hover;
+                transition: all .5s;
+            }
+            &:hover span {
+                border-color: $a-hover;
+                transition: all .5s;
+            }
+            &:hover svg {
+                fill: $a-hover;
+                transition: all .5s;
+            }
+            &:active {
+                color: $a-active;
+            }
+            &:active span {
+                border-color: $a-active;
+            }
+            &:active svg {
+                fill: $a-active;
+            }
+        }
+        &__basket {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover {
+                color: $a-hover;
+                transition: all .5s;
+            }
+            &:hover span {
+                border-color: $a-hover;
+                transition: all .5s;
+            }
+            &:hover svg {
+                fill: $a-hover;
+                transition: all .5s;
+            }
+            &:active {
+                color: $a-active;
+            }
+            &:active span {
+                border-color: $a-active;
+            }
+            &:active svg {
+                fill: $a-active;
+            }
+            &--active .header-info__basket-status{
+                color: $a-hover;
+            }
+            &--active svg{
+                fill: $a-hover;
+            }
+
+            &-status {
+                width: 19px;
+                height: 19px;
+                border-radius: 50%;
+                border: 2px solid $border;
+                background-color: $bgc-gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 10px;
+                font-weight: 700;
+                font-size: 11px;
+                &--active {
+                    fill: $a-hover;
+                    color: $a-hover;
+                }
+            }
+        }
+    }
+    &__logo-tel {
+        margin-left: auto;
+        font-size: 16px;
+        line-height: 1.2;
+        color: $primary;
+        font-weight: 700;
+        &:hover {
+            color: $a-hover;
+            transition: all .5s;
+            svg {
+                fill: $a-hover;
+                transition: all .5s;
+            }
+        }
+        &:active {
+            color: $a-active;
+            transition: all .5s;
+            svg {
+                fill: $a-active;
+                transition: all .5s;
+            }
+        }
+    }
+}
+

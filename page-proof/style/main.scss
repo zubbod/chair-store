@@ -1,0 +1,26 @@
+//variables
+@import 'template/var';
+
+//template
+@import 'template/reset';
+@import 'template/main';
+
+//fonts
+@import 'template/fonts';
+
+
+//components
+@import 'template/components/header';
+@import 'template/components/buttons';
+@import 'template/components/nav';
+@import 'template/components/input';
+@import 'template/components/breadcrumbs';
+@import 'template/components/section-details';
+@import 'template/components/section-main';
+@import 'template/components/filters';
+@import 'template/components/section-content';
+@import 'template/components/pagination';
+@import 'template/components/basket';
+@import 'template/components/check-status';
+@import 'template/components/footer';
+

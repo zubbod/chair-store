@@ -1,0 +1,54 @@
+.pagination {
+    width: 1170px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: $bgc;
+    border-radius: 5px;
+}
+
+.first-page svg,
+.last-page svg,
+.prev-page svg,
+.next-page svg {
+    fill: $primary;
+}
+
+.first-page,
+.last-page,
+.prev-page,
+.next-page,
+.num-page {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bgc;
+    margin: 0 8px;
+    border-radius: 50%;
+    &:hover {
+        font-weight: 900;
+        box-shadow: 9px 9px 16px rgba($color: #A8ACB9, $alpha: 0.44), -9px 0px 16px rgba($color: #A8ACB9, $alpha: 0.44);
+        color: $a-hover;
+        transition: all 0.4s;
+        & svg {
+          fill: $a-hover;
+        }
+    }
+
+}
+
+.first-page,
+.last-page,
+.prev-page,
+.next-page {
+    border: 2px solid $bgc-gray-second;
+}
+
+.last-page svg,
+.next-page svg {
+    transform: rotate(180deg);
+}

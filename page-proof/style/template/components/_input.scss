@@ -1,0 +1,266 @@
+input[type="search"] {
+    border: 1px solid $border;
+    border-top: none;
+    border-bottom: none;
+    color: $icon;
+    font-size: 16px;
+    font-weight: 300;
+    flex-basis: 330px;
+    padding: 0 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.995' height='12.995' viewBox='0 0 12.995 12.995'%3E%3Cpath d='M1266.614,124.61a1.284,1.284,0,0,1-1.813,0l-2.643-2.644a5.382,5.382,0,1,1,1.813-1.812l2.643,2.645A1.28,1.28,0,0,1,1266.614,124.61Zm-4.879-9.593a3.333,3.333,0,1,0,0,4.713A3.333,3.333,0,0,0,1261.735,115.017Z' transform='translate(-1253.994 -111.99)' fill='%23343e5c'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    &::placeholder {
+        color: $icon;
+    }
+}
+
+//filters
+.filter__price-min,
+.filter__price-max {
+    height: 30px;
+    width: 76px;
+    border-radius: 5px;
+    border: 2px solid $border;
+    color: $primary;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 8px;
+}
+
+label[for="min"] {
+    margin-right: 10px;
+}
+
+//type range
+input[type="range"] {
+    width: 216px;
+    transform: translateX(-6px);
+    margin-top: 10px;
+    appearance: none;
+    background-color: $bgc;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 5px;
+    background-color: $a-hover;
+    border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 8px;
+    border: 2px solid $border;
+    background-color: $bgc;
+    transform: translateY(-4px);
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: $a-hover;
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: $icon;
+}
+
+input[type="range"]::-ms-fill-lower {
+    background-color: $a-hover;
+}
+
+input[type="range"]::-ms-fill-upper {
+    background-color: $icon;
+}
+
+label[for="filterList"],
+label[for="numOnPage"] {
+    color: $primary;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+label[for="filterList"] {
+    margin-right: 30px;
+}
+
+.filter__set select {
+    appearance: none;
+    -moz-appearance: none;
+    margin-left: 10px;
+    font-weight: 700;
+    color: $primary;
+    border: none;
+    outline: none;
+
+}
+
+//end type range
+//end filter
+//оформление заказа
+.order {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    width: 770px;
+    flex-direction: column;
+    background-color: $bgc;
+    border-radius: 5px;
+    padding: 50px;
+    &__title {
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    &__address-title,
+    &__addressee-title {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+}
+
+input[name="office"],
+input[name="floor"],
+input[name="entrance"] {
+    width: 70px;
+    padding: 13px;
+    border: 2px solid $bgc-gray-second;
+    border-radius: 3px;
+    color: $icon;
+    margin-bottom: 24px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 20px;
+    &::placeholder {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 400;
+        color: $icon;
+    }
+    &:hover {
+        border-color: $icon;
+    }
+    &:focus {
+        border-color: $input-focus;
+        &::placeholder {
+            font-size: 12px;
+            transform: translateY(-14px);
+            transition: all .3s;
+        }
+    }
+}
+
+input[name="name"],
+input[name="address"],
+input[name="surname"],
+input[name="mail"],
+input[name="tel"],
+textarea[name="comment"] {
+    width: 100px;
+    padding: 13px;
+    width: 420px;
+    border: 2px solid $bgc-gray-second;
+    border-radius: 3px;
+    color: $icon;
+    margin-bottom: 24px;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    &::placeholder {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 400;
+        color: $icon;
+    }
+    &:hover {
+        border-color: $icon;
+    }
+    &:focus {
+        border-color: $input-focus;
+        &::placeholder {
+            font-size: 12px;
+            transform: translateY(-14px);
+            transition: all .3s;
+        }
+    }
+}
+
+input[type="submit"].order-submit {
+    height: 56px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $bgc;
+    border: none;
+    border-radius: 5px;
+    background-color: $a-hover;
+    font-size: 18px;
+    font-weight: 700;
+    &:hover {
+        background-color: $button-hover;
+    }
+    &:active {
+        background-color: $button-active;
+    }
+}
+
+// проверка статуса заказа
+
+form[name="checkStatus"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & input[name="numOrder"],
+    & input[name="emailOrder"] {
+        width: 289px;
+        border: 2px solid $bgc-gray-second;
+        padding: 13px;
+        border-radius: 3px;
+        margin-bottom: 25px;
+        color: $icon;
+        &::placeholder {
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 400;
+            color: $icon;
+        }
+        &:hover {
+            border-color: $icon;
+        }
+        &:focus {
+            border-color: $input-focus;
+            &::placeholder {
+                font-size: 12px;
+                transform: translateY(-14px);
+                transition: all .3s;
+            }
+        }
+    }
+    & button[type="submit"] {
+        height: 56px;
+        width: 319px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $bgc;
+        border: none;
+        border-radius: 5px;
+        background-color: $a-hover;
+        font-size: 18px;
+        font-weight: 700;
+        &:hover {
+            background-color: $button-hover;
+        }
+        &:active {
+            background-color: $button-active;
+        }
+        & svg {
+            margin-left: 7px;
+        }
+    }
+}

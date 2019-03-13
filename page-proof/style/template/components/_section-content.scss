@@ -1,0 +1,67 @@
+.content {
+    display: flex;
+    justify-content: center;
+    &__wrapper {
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1230px;
+        margin: 0 -30px -30px;
+        padding-bottom: 70px;
+    }
+    &__banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 5px;
+        width: 570px;
+        height: 384px;
+        margin: 25px 0 0 30px;
+        background-image: url("../img/Clip.jpg");
+        &:hover {
+            box-shadow: 9px 9px 21px rgba($color: #A8ACB9, $alpha: 0.44);
+            box-shadow: 0px 9px 21px rgba($color: #A8ACB9, $alpha: 0.44);
+        }
+        &-title {
+            margin-left: 40px;
+            font-size: 36px;
+            font-weight: 700;
+            width: 288px;
+        }
+    }
+    &__card {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $bgc;
+        padding: 40px 0;
+        margin: 25px 0 0 30px;
+        width: 270px;
+        height: 304px;
+        border-radius: 5px;
+        &:hover {
+            box-shadow: 9px 9px 21px rgba($color: #A8ACB9, $alpha: 0.44);
+            box-shadow: 0px 9px 21px rgba($color: #A8ACB9, $alpha: 0.44);
+        }
+    }
+    &__title {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        text-align: center;
+        width: 70%;
+        font-size: 16px;
+        font-weight: 500;
+        color: $primary;
+    }
+    &__price {
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary;
+        &-rub {
+            margin-left: 10px;
+        }
+    }
+}

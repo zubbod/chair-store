@@ -1,0 +1,23 @@
+.breadcrumbs {
+  padding: 30px 0;
+  font-weight: 400;
+  font-size: 14px;
+  &__item {
+    color: $icon;
+    &:hover {
+      color: $a-hover;
+    }
+    &:active {
+      color: $a-active;
+    }
+  }
+
+  & svg {
+    margin: 0 10px;
+    transform: translateY(3px);
+    fill: $icon;
+  }
+  &__item--active {
+    color: $primary;
+  }
+}

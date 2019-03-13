@@ -1,0 +1,85 @@
+.header__button {
+    border: 2px solid $border;
+    border-radius: 5px;
+    padding: 10px 20px;
+    &:hover {
+        border-color: $a-hover;
+        color: $a-hover;
+        transition: all .5s;
+    }
+    &:hover svg {
+        fill: $a-hover;
+        transition: all .5s;
+    }
+    &:active {
+        border-color: $a-active;
+        color: $a-active;
+    }
+    &:active svg {
+        fill: $a-active;
+    }
+}
+
+.detail-descr__button {
+    background-color: $a-hover;
+    height: 50px;
+    border-radius: 5px;
+    color: $bgc;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      background-color: $button-hover;
+    }
+    &:active {
+      background-color: $button-active;
+    }
+}
+
+.content__button {
+    height: 32px;
+    width: 96px;
+    font-weight: 700;
+    font-size: 14px;
+    color: $primary;
+    border: 2px solid $border;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:active {
+        border-color: $a-active;
+        color: $a-active;
+    }
+    &:hover {
+        border-color: $a-hover;
+        color: $a-hover;
+        transition: all .5s;
+    }
+}
+
+.content__banner-button {
+    height: 32px;
+    width: 121px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $primary;
+    border: 2px solid $icon;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    margin-left: 40px;
+    &:active {
+        border-color: $a-active;
+        color: $a-active;
+    }
+    &:hover {
+        border-color: $a-hover;
+        color: $a-hover;
+        transition: all .5s;
+    }
+}
